@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-deviceinfo",
+  "version": "0.0.1",
+  "description": "Get device information",
+  "cordova": {
+    "id": "cordova-plugin-deviceinfo",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitanmol/DeviceInfo.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Amit Kumar Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amitanmol/DeviceInfo/issues"
+  },
+  "homepage": "https://github.com/amitanmol/DeviceInfo#readme"
+}

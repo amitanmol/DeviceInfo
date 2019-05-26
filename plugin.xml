@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-deviceinfo" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		DeviceInfo
+	</name>
+    <description>
+        This cordova plugin provides device information.
+    </description>
+    <license>MIT</license>
+    <keywords>phonegap,cordova,android,ios,wp,Windows,phone,device,id,uuid,unique,model,name,manufacturer,system,version</keywords>
+	<js-module name="DeviceInfo" src="www/DeviceInfo.js">
+		<clobbers target="cordova.plugins.DeviceInfo" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="DeviceInfo">
+				<param name="android-package" value="cordova-plugin-deviceinfo.DeviceInfo" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/DeviceInfo.java" target-dir="src/cordova-plugin-deviceinfo/DeviceInfo" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="DeviceInfo">
+				<param name="ios-package" value="DeviceInfo" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/DeviceInfo.m" />
+	</platform>
+</plugin>
